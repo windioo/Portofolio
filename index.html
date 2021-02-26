@@ -74,7 +74,17 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-4">Windio Yuliar Armanto</h1>
-      <p class="lead">Fresh Graduate</p>
+      <p class="lead">
+        <a href="https://github.com/windioo" class="text-dark" target="_blank"
+          >Github |</a
+        >
+        <a
+          href="https://www.linkedin.com/in/windioya/"
+          class="text-dark"
+          target="_blank"
+          >Linkedin</a
+        >
+      </p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -96,13 +106,12 @@
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
             <p>
-               Nama saya Windio Yuliar Armanto, saya lulusan Universitas
+              Nama saya Windio Yuliar Armanto, saya lulusan Universitas
               Gunadarma. Saya mengambil jurusan sistem informasi. Tujuan saya
               adalah menjadi programmer yang dapat menyelesaikan pekerjaan
               dengan baik dan terus belajar mengenai dunia programming.
             </p>
           </div>
-
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -126,14 +135,15 @@
         <div class="col-md-4 mb-3">
           <div class="card">
             <img
-              src="img/Projects/1.jpg"
+              src="img/Projects/palindrome.PNG"
               class="card-img-top"
               alt="Project 1"
             />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Project ini adalah pembuatan website untuk pengecekan kata yang
+                di input Palindrome atau bukan. Dengan menggunakan HTML,CSS,dan
+                Javascript.
               </p>
             </div>
           </div>
@@ -141,19 +151,19 @@
         <div class="col-md-4 mb-3">
           <div class="card">
             <img
-              src="img/Projects/2.jpg"
+              src="img/Projects/Perpus.PNG"
               class="card-img-top"
               alt="Project 1"
             />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Project ini adalah website untuk peminjaman buku di
+                perpustakaan. Dengan menggunakan HTML,CSS,dan PHP.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <!-- <div class="col-md-4 mb-3">
           <div class="card">
             <img
               src="img/Projects/3.jpg"
@@ -197,7 +207,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -210,7 +220,7 @@
     <!-- Projects End -->
 
     <!-- Contact -->
-    <section id="contact">
+    <form action="kirim.php" method="POST" id="contact">
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col"><h2>Contact Me</h2></div>
@@ -222,6 +232,7 @@
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input
                   type="text"
+                  name="nama"
                   class="form-control"
                   id="name"
                   aria-describedby="name"
@@ -231,17 +242,33 @@
                 <label for="email" class="form-label">Email </label>
                 <input
                   type="email"
+                  name="email"
                   class="form-control"
                   id="email"
                   aria-describedby="email"
                 />
               </div>
               <div class="mb-3">
+                <label for="judul" class="form-label">Judul</label>
+                <input
+                  type="text"
+                  name="judul"
+                  class="form-control"
+                  id="judul"
+                  aria-describedby="judul"
+                />
+              </div>
+              <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  name="pesan"
+                ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary" name="kirim"  value="Kirim Pesan">Kirim</button>
             </form>
           </div>
         </div>
@@ -253,7 +280,7 @@
           d="M0,128L26.7,138.7C53.3,149,107,171,160,181.3C213.3,192,267,192,320,197.3C373.3,203,427,213,480,208C533.3,203,587,181,640,192C693.3,203,747,245,800,256C853.3,267,907,245,960,224C1013.3,203,1067,181,1120,176C1173.3,171,1227,181,1280,160C1333.3,139,1387,85,1413,58.7L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
         ></path>
       </svg>
-    </section>
+    </form>
     <!-- Contact End -->
 
     <!-- Footer -->
