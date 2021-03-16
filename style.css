@@ -17,3 +17,10 @@ footer {
 section {
   padding-top: 5rem;
 }
+
+.scroll {
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0 10px 40px -10px rgb(0 0 0 / 19%);
+  background-color: #383e56;
+}
